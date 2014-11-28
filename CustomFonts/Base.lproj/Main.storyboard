@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9o-DA-AHn">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</mutableString>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="20" width="5875" height="780"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9o-DA-AHn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Rgb-ZB-CYj"/>
+                            <constraint firstAttribute="trailing" secondItem="e9o-DA-AHn" secondAttribute="trailing" id="TVe-Sj-tKM"/>
+                            <constraint firstAttribute="centerY" secondItem="e9o-DA-AHn" secondAttribute="centerY" id="Uan-u0-bcU"/>
+                            <constraint firstAttribute="centerX" secondItem="e9o-DA-AHn" secondAttribute="centerX" id="Xvw-nJ-oiB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="e9o-DA-AHn" secondAttribute="bottom" id="dBF-bB-YP1"/>
+                            <constraint firstItem="e9o-DA-AHn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="dVV-3s-xZl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="e9o-DA-AHn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Rgb-ZB-CYj"/>
+                                <exclude reference="TVe-Sj-tKM"/>
+                                <exclude reference="Uan-u0-bcU"/>
+                                <exclude reference="Xvw-nJ-oiB"/>
+                                <exclude reference="dVV-3s-xZl"/>
+                                <exclude reference="dBF-bB-YP1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="e9o-DA-AHn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Rgb-ZB-CYj"/>
+                                <include reference="TVe-Sj-tKM"/>
+                                <exclude reference="Uan-u0-bcU"/>
+                                <include reference="Xvw-nJ-oiB"/>
+                                <include reference="dVV-3s-xZl"/>
+                                <include reference="dBF-bB-YP1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="e9o-DA-AHn" id="9CC-RO-DYA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="81"/>
+        </scene>
+    </scenes>
+</document>
